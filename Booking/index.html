@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form Challenge</title>
+</head>
+<body>
+
+  <section>
+    <h2>Book Your Trip</h2>
+
+    <form action="#" method="POST">
+      <!-- 1. Full name -->
+      <div>
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+      </div>
+      <br>
+
+      <!-- 2. Email -->
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+      </div>
+      <br>
+
+      <!-- 3. Phone number -->
+      <div>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+962 7X XXX XXXX" required>
+      </div>
+      <br>
+
+      <!-- 4. Destination selection -->
+      <div>
+        <label for="destination">Destination Selection:</label><br>
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>Select your destination</option>
+          <option value="petra">Petra, Jordan</option>
+          <option value="cairo">Cairo, Egypt</option>
+          <option value="paris">Paris, France</option>
+          <option value="tokyo">Tokyo, Japan</option>
+          <option value="rome">Rome, Italy</option>
+        </select>
+      </div>
+      <br>
+
+      <!-- 5. Travel date -->
+      <div>
+        <label for="travel-date">Travel Date:</label><br>
+        <input type="date" id="travel-date" name="travel_date" required>
+      </div>
+      <br>
+
+      <!-- 6. Number of travelers -->
+      <div>
+        <label for="travelers">Number of Travelers:</label><br>
+        <input type="number" id="travelers" name="travelers" min="1" max="20" placeholder="1" required>
+      </div>
+      <br>
+
+      <!-- Homework: Radio buttons for travel type -->
+      <div>
+        <label>Travel Type:</label><br>
+        <input type="radio" id="economy" name="travel_type" value="economy" required>
+        <label for="economy">Economy</label>
+
+        <input type="radio" id="business" name="travel_type" value="business">
+        <label for="business">Business</label>
+
+        <input type="radio" id="vip" name="travel_type" value="vip">
+        <label for="vip">First Class / VIP</label>
+      </div>
+      <br>
+
+      <!-- 7. Additional notes -->
+      <div>
+        <label for="notes">Additional Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="30" placeholder="Enter any additional notes or requests..."></textarea>
+      </div>
+      <br>
+
+      <!-- Homework: Checkbox for accepting terms -->
+      <div>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the terms and conditions</label>
+      </div>
+      <br>
+
+      <!-- 8. Submit button -->
+      <div>
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>
